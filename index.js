@@ -19,9 +19,9 @@ function main(){
     });
 }
 $(`.shopping-list`).on("click",".shopping-item-toggle", function(){
-    let Title = $(this).parent().siblings();
-    console.log(Title);
-    Title.toggleClass('shopping-item__checked');
+    let item = $(this).parent().siblings();
+    console.log(item);
+    item.toggleClass('shopping-item__checked');
 });
 
 $(`.shopping-list`).on("click",".shopping-item-delete", function(){
